@@ -1,0 +1,37 @@
+[INPUT NOTHING]
+ls
+ls -a
+ls ls
+ls -a -a
+-a
+-a ls
+ls-a
+-als
+ls;
+ls ;
+;ls
+ls; ls
+ls ; ; ls
+;
+ls || ls
+ls | ls
+ls ||| ls
+notcmd || ls
+notcmd ; ls
+notcmd && ls
+mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm
+;;
+; ;
+ ;
+ ls
+; ls
+k;k;k;k;k;k;k;k;k;k;k;k;k;k;k;k;k;k;k;k;k;k;k;k;k;kk;k;k;k;k;k;k;k;k;k;k;k;kk;k;k;k;k;k;k;k;k;k;k;k;kk;k;k;k;k;k;k;k;k;k;k;k;kk;k;k;k;k;k;k;k;k;k;k;k;kk;k;k;k;k;k;k;k;k;k;k;k;kk;k;k;k;k;k;k;k;k;k;k;k;kk;k;k;k;k;k;k;k;k;k;k;k;kk;k;k;k;k;k;k;k;k;k;k;k;kk;k;k;k;k;k;k;k;k;k;k;k;kk;k;k;k;k;k;k;k;k;k;k;k;kk;k;k;k;k;k;k;k;k;k;k;k;kk;k;k;k;k;k;k;k;k;k;k;k;kk;k;k;k;k;k;k;k;k;k;k;k;kk;k;k;k;k;k;k;k;k;k;k;k;kk;k;k;k;k;k;k;k;k;k;k;k;kk;k;k;k;k;k;k;k;k;k;k;k;kk;k;k;k;k;k;k;k;k;k;k;k;kk;k;k;k;k;k;k;k;k;k;k;k;kk;k;k;k;k;k;k;k;k;k;k;k;kk;k;k;k;k;k;k;k;k;k;k;k;kk;k;k;k;k;k;k;k;k;k;k;k;kk;k;k;k;k;k;k;k;k;k;k;k;kk;k;k;k;k;k;k;k;k;k;k;k;kk;k;k;k;k;k;k;k;k;k;k;k;kk;k;k;k;k;k;k;k;k;k;k;k;kk;k;k;k;k;k;k;k;k;k;k;k;kk;k;k;k;k;k;k;k;k;k;k;k;kk;k;k;k;k;k;k;k;k;k;k;k;kk;k;k;k;k;k;k;k;k;k;k;k;kk;k;k;k;k;k;k;k;k;k;k;k;kk;k;k;k;k;k;k;k;k;k;k;k;kk;k;k;k;k;k;k;k;k;k;k;k;kk;k;k;k;k;k;k;k;k;k;k;k;kk;k;k;k;k;k;k;k;k;k;k;k;kk;k;k;k;k;k;k;k;k;k;k;k;kk;k;k;k;k;k;k;k;k;k;k;k;kk;k;k;k;k;k;k;k;k;k;k;k;kk;k;k;k;k;k;k;k;k;k;k;k;kk;k;k;k;k;k;k;k;k;k;k;k;kk;k;k;k;k;k;k;k;k;k;k;k;kk;k;k;k;k;k;k;k;k;k;k;k;kk;k;k;k;k;k;k;k;k;k;k;k;kk;k;k;k;k;k;k;k;k;k;k;k;kk;k;k;k;k;k;k;k;k;k;k;k;kk;k;k;k;k;k;k;k;k;k;k;k;kk;k;k;k;k;k;k;k;k;k;k;k;kk;k;k;k;k;k;k;k;k;k;k;k;kk;k;k;k;k;k;k;k;k;k;k;k;kk;k;k;k;k;k;k;k;k;k;k;k;kk;k;k;k;k;k;k;k;k;k;k;k;kk;k;k;k;k;k;k;k;k;k;k;k;kk;k;k;k;k;k;k;k;k;k;k;k;kk;k;k;k;k;k;k;k;k;k;k;k;kk;k;k;k;k;k;k;k;k;k;k;k;kk;k;k;k;k;k;k;k;k;k;k;k;kk;k;k;k;k;k;k;k;k;k;k;k;kk;k;k;k;k;k;k;k;k;k;k;k;kk;k;k;k;k;k;k;k;k;k;k;k;kk;k;k;k;k;k;k;k;k;k;k;k;kk;k;k;k;k;k;k;k;k;k;k;k;kk;k;k;k;k;k;k;k;k;k;k;k;kk;k;k;k;k;k;k;k;k;k;k;k;kk;k;k;k;k;k;k;k;k;k;k;k;kk;k;k;k;k;k;k;k;k;k;k;k;kk;k;k;k;k;k;k;k;k;k;k;k;kk;k;k;k;k;k;k;k;k;k;k;k;kk;k;k;k;k;k;k;k;k;k;k;k;kk;k;k;k;k;k;k;k;k;k;k;k;kk;k;k;k;k;k;k;k;k;k;k;k;kk;k;k;k;k;k;k;k;k;k;k;k;kk;k;k;k;k;k;k;k;k;k;k;k;kk;k;k;k;k;k;k;k;k;k;k;k;kk;k;k;k;k;k;k;k;k;k;k;k;kk;k;k;k;k;k;k;k;k;k;k;k;kk;k;k;k;k;k;k;k;k;k;k;k;kk;k;k;k;k;k;k;k;k;k;k;k;kk;k;k;k;k;k;k;k;k;k;k;k;kk;k;k;k;k;k;k;k;k;k;k;k;kk;k;k;k;k;k;k;k;k;k;k;k;kk;k;k;k;k;k;k;k;k;k;k;k;kk;k;k;k;k;k;k;k;k;k;k;k;kk;k;k;k;k;k;k;k;k;k;k;k;k
+ls#-a
+ls#; ls
+#ls
+#
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+exit
+ls; exit
+exit; ls
+
