@@ -7,25 +7,9 @@
 #include <string.h>
 #include <vector>
 
-
-/*
-PLANE:
-	get input
-	token to get everything infront of any '#' character
-	token to get string in front of ';'
-		  to get '||'
-		  to get '&&'
-	do things...
-
-
-//void execute(char ** commands, char *cmd)
-void disp(char **cmdlist){
-}
-*/
-
 std::vector<int> conn_order;													//vector to track order and type of connectors
 int words = 0;																	//int to keep track of argument #'s throughout user input
-
+																				//I'll keep this if I might need it in the future
 void read_order(char *cmds){
 	int flag = 0;
 	for(int i=0; cmds[i]!='\0'; ++i){
@@ -57,33 +41,25 @@ void disp_v(std::vector<int> &v){
 	}
 	std::cout << '\n';
 }
-
+//Counts the number of "words" in the User's input between white-space and connectors. I'm afraid to remove it ):
 void count_words(char *cmds){
 	for(unsigned i=0; i<conn_order.size(); ++i){
 		if(conn_order.at(i) == -1) ++words;
 	}
 }
 
-int c_size(char *c){
-	int i = 1;
-	for( ; c[i] != '\0'; ++i){}
-	return i;
-}
-
+//This everything in the user's input found behind the first '#' character.
 void tok_comment(char *cmd){
 	cmd = strtok(cmd, "#");
 }
 
-void disp(char **cmdlist){
-	std::cout << cmdlist[0][0] << '\n';
-}
-
-void disp_cmds(char **cmdlist, int size){
-	for(int i = 0;i<size ; ++i){
-		std::cout << cmdlist[i][0] << '\n';
-	}
-}
-
+	/*
+NAME: tok_conn //why do I even include the name??? It's right THERE!
+INPUT: char** //is the array of pointers that will be modified to carry each argument tokenized in this function
+		char* //is the c_string that holds the not yet tokenized string of arguments
+OUTPUT: Returns an integer whose value is the calculated number of "argument-lines" that existed between the
+		now tokenized connectors. This outpu becomes 'int size' for 'tok_space()'
+*/
 int tok_conn(char **cmdlist, char *cmd){
 	int argc = 0;
 	cmdlist[argc] = strtok(cmd, ";&|");
@@ -94,37 +70,67 @@ int tok_conn(char **cmdlist, char *cmd){
 	return argc;
 }
 
+//Function to recognize the 'exit' command. This took most of my time.
+bool is_exit(char *c){
+	if(c[0] == 'e' && c[1] == 'x' && c[2] == 'i' && c[3] == 't') return true;
+	return false;
+}
+
+/*
+NAME: tok_space() //though it's actually where commands are executed as well
+INPUT: char** //holds commands whose connectors were tokenized, but not the white space between them
+		int //integer whose value is the number of "argument lines" calculated to exist between all connectors
+FUNCT: Loops inside the function. Tokenizing an entire argument line's white space and organizes those tokens to be
+		executed with 'execvp()'
+*/
+
 void tok_space(char **cmdlist, int size){
 	int curr = 0;
 	char **temp;
 	temp = new char *[words + 1];
 	while(curr != size){
-	int argc = 0;
-	temp[argc] = strtok(cmdlist[curr], " ");
-	while(temp[argc] != NULL){
-		++argc;
-		temp[argc] = strtok(NULL, " ");							//temp[argc] holds the "space-tokenized" commands
-	}
-	argc = 0;
+		int argc = 0;
+		temp[argc] = strtok(cmdlist[curr], " ");
+		while(temp[argc] != NULL){
+			if(is_exit(temp[argc])){
+				exit(0);
+			}
+			++argc;
+			temp[argc] = strtok(NULL, " ");							//temp[argc] holds the "space-tokenized" commands
+		}
+		argc = 0;
 
 
 	
-	int pid = fork();
-	if(pid == -1){
-		perror("fork");
-	}
-	else if(pid == 0){
-		int ret = execvp(temp[argc], temp);
-		if(ret == -1){
-			perror("execvp");
+		int pid = fork();
+		if(pid == -1){
+			perror("fork");
 		}
-		exit(1);
+		else if(pid == 0){
+			int ret = execvp(temp[argc], temp);						//There is some black magic happening here
+			if(ret == -1){
+				perror("execvp");
+			}
+			exit(1);
+		}
+		else{
+			wait(NULL);
+			++curr;
+		}
 	}
-	else{
-		wait(NULL);
-		++curr;
+}
+/*
+NAME: is_comment()
+INPUT: string
+OUTPUT: boolean
+FUNCT: Returns true if entire string was a comment. False otherwise.
+*/
+bool is_comment(std::string &s){
+	if(s.at(0) == '#') return true;
+	for(int i=0; s.at(i) == ' '; ++i){
+		if(s.at(i + 1) == '#') return true;
 	}
-	}
+	return false;
 }
 
 
@@ -135,7 +141,7 @@ int main()
 		std::string cmds;															//string for user input;
 		getline(std::cin, cmds);
 		if(cmds == "exit") exit(0);													//if input is "exit", exit process
-		if(cmds.size() != 0){														//brach if there was input
+		if(cmds.size() != 0 && !(is_comment(cmds))){								//brach if there was input
 			char *cmd_c_str;
 			cmd_c_str = new char [cmds.size() + 1];
 			strcpy(cmd_c_str, cmds.c_str());										//convert cmd string to c_string.
@@ -144,8 +150,8 @@ int main()
 			tok_comment(cmd_c_str);													//'cmdlist' holds the first command
 			read_order(cmd_c_str);
 			count_words(cmd_c_str);
-			int list_size = tok_conn(cmdlist, cmd_c_str);											//token out connectors and white spaces
-			tok_space(cmdlist, list_size);
+			int list_size = tok_conn(cmdlist, cmd_c_str);							//token out connectors and white spaces
+			tok_space(cmdlist, list_size);											//move to function where everything is executed
 			
 
 		}
