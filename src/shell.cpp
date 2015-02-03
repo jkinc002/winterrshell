@@ -28,7 +28,7 @@ void read_order(char *cmds){
 			flag = 0;
 		}
 		else if(cmds[i] != ' ' && flag == 0){
-			conn_order.push_back(-1);
+		//	conn_order.push_back(-1);
 			flag = 1;
 		}
 		else if(cmds[i] == ' ') flag = 0;
@@ -53,7 +53,7 @@ void tok_comment(char *cmd){
 	cmd = strtok(cmd, "#");
 }
 
-	/*
+/*
 NAME: tok_conn //why do I even include the name??? It's right THERE!
 INPUT: char** //is the array of pointers that will be modified to carry each argument tokenized in this function
 		char* //is the c_string that holds the not yet tokenized string of arguments
@@ -72,7 +72,7 @@ int tok_conn(char **cmdlist, char *cmd){
 
 //Function to recognize the 'exit' command. This took most of my time.
 bool is_exit(char *c){
-	if(c[0] == 'e' && c[1] == 'x' && c[2] == 'i' && c[3] == 't') return true;
+	if(c[0] == 'e' && c[1] == 'x' && c[2] == 'i' && c[3] == 't' && c[4] == '\0') return true;
 	return false;
 }
 
@@ -86,6 +86,7 @@ FUNCT: Loops inside the function. Tokenizing an entire argument line's white spa
 
 void tok_space(char **cmdlist, int size){
 	int curr = 0;
+	unsigned index = 0;
 	char **temp;
 	temp = new char *[words + 1];
 	while(curr != size){
@@ -114,7 +115,22 @@ void tok_space(char **cmdlist, int size){
 			exit(1);
 		}
 		else{
-			wait(NULL);
+			int ret;
+			waitpid(pid,&ret,0);
+			if(conn_order.size() > 0 && index < conn_order.size()){
+				if(ret != 0){
+					if(conn_order.at(index) == 2){
+						return;
+					}
+					++index;
+				}
+				else{
+					if(conn_order.at(index) == 3){
+						return;
+					}
+					++index;
+				}
+			}
 			++curr;
 		}
 	}
@@ -127,9 +143,6 @@ FUNCT: Returns true if entire string was a comment. False otherwise.
 */
 bool is_comment(std::string &s){
 	if(s.at(0) == '#') return true;
-	for(int i=0; s.at(i) == ' '; ++i){
-		if(s.at(i + 1) == '#') return true;
-	}
 	return false;
 }
 
@@ -149,8 +162,7 @@ int main()
 			cmdlist = new char *[cmds.size() + 1];
 			tok_comment(cmd_c_str);													//'cmdlist' holds the first command
 			read_order(cmd_c_str);
-			count_words(cmd_c_str);
-			int list_size = tok_conn(cmdlist, cmd_c_str);							//token out connectors and white spaces
+			int list_size = tok_conn(cmdlist,cmd_c_str);
 			tok_space(cmdlist, list_size);											//move to function where everything is executed
 			
 
