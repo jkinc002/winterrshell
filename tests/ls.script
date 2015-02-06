@@ -1,0 +1,199 @@
+Script started on Fri 06 Feb 2015 03:41:00 PM PST
+]0;powerpuddin@powerpuddin-Lenovo-IdeaPad-Y570: ~/Desktop/cs100/homework/hw0/rshell/testspowerpuddin@powerpuddin-Lenovo-IdeaPad-Y570:~/Desktop/cs100/homework/hw0/rshell/ttests$ cd ../src
+]0;powerpuddin@powerpuddin-Lenovo-IdeaPad-Y570: ~/Desktop/cs100/homework/hw0/rshell/srcpowerpuddin@powerpuddin-Lenovo-IdeaPad-Y570:~/Desktop/cs100/homework/hw0/rshell/ssrc$ ls[K[Kmka[K[K[K./ls
+'  Makefile  a.out  ls  ls.cpp  sampledir  shell.cpp  stat.cpp  
+]0;powerpuddin@powerpuddin-Lenovo-IdeaPad-Y570: ~/Desktop/cs100/homework/hw0/rshell/srcpowerpuddin@powerpuddin-Lenovo-IdeaPad-Y570:~/Desktop/cs100/homework/hw0/rshell/ssrc$ ./ls -a
+'  .  ..  .ls.cpp.swp  .shell.cpp.swp  Makefile  a.out  ls  ls.cpp  sampledir  shell.cpp  stat.cpp  
+]0;powerpuddin@powerpuddin-Lenovo-IdeaPad-Y570: ~/Desktop/cs100/homework/hw0/rshell/srcpowerpuddin@powerpuddin-Lenovo-IdeaPad-Y570:~/Desktop/cs100/homework/hw0/rshell/ssrc$ ./ls -l
+-rw-rw-r-- 1 1000 1000 874 1422058742 '
+-rw-rw-r-- 1 1000 1000 26 1423101109 Makefile
+-rwxrwxr-x 1 1000 1000 7932 1423119643 a.out
+-rwxrwxr-x 1 1000 1000 108937 1423122583 ls
+-rw-rw-r-- 1 1000 1000 3868 1423203954 ls.cpp
+drwxrwxr-x 2 1000 1000 4096 1423001912 sampledir
+-rw-rw-r-- 1 1000 1000 4593 1422995288 shell.cpp
+-rw-rw-r-- 1 1000 1000 733 1423120594 stat.cpp
+
+]0;powerpuddin@powerpuddin-Lenovo-IdeaPad-Y570: ~/Desktop/cs100/homework/hw0/rshell/srcpowerpuddin@powerpuddin-Lenovo-IdeaPad-Y570:~/Desktop/cs100/homework/hw0/rshell/ssrc$ ./ls -al
+-rw-rw-r-- 1 1000 1000 874 1422058742 '
+drwxrwxr-x 3 1000 1000 4096 1423203955 .
+drwxrwxr-x 5 1000 1000 4096 1422946456 ..
+-rw-r--r-- 1 1000 1000 12288 1423037418 .ls.cpp.swp
+-rw-r--r-- 1 1000 1000 16384 1423011402 .shell.cpp.swp
+-rw-rw-r-- 1 1000 1000 26 1423101109 Makefile
+-rwxrwxr-x 1 1000 1000 7932 1423119643 a.out
+-rwxrwxr-x 1 1000 1000 108937 1423122583 ls
+-rw-rw-r-- 1 1000 1000 3868 1423203954 ls.cpp
+drwxrwxr-x 2 1000 1000 4096 1423001912 sampledir
+-rw-rw-r-- 1 1000 1000 4593 1422995288 shell.cpp
+-rw-rw-r-- 1 1000 1000 733 1423120594 stat.cpp
+
+]0;powerpuddin@powerpuddin-Lenovo-IdeaPad-Y570: ~/Desktop/cs100/homework/hw0/rshell/srcpowerpuddin@powerpuddin-Lenovo-IdeaPad-Y570:~/Desktop/cs100/homework/hw0/rshell/ssrc$ ./ls -la
+-rw-rw-r-- 1 1000 1000 874 1422058742 '
+drwxrwxr-x 3 1000 1000 4096 1423203955 .
+drwxrwxr-x 5 1000 1000 4096 1422946456 ..
+-rw-r--r-- 1 1000 1000 12288 1423037418 .ls.cpp.swp
+-rw-r--r-- 1 1000 1000 16384 1423011402 .shell.cpp.swp
+-rw-rw-r-- 1 1000 1000 26 1423101109 Makefile
+-rwxrwxr-x 1 1000 1000 7932 1423119643 a.out
+-rwxrwxr-x 1 1000 1000 108937 1423122583 ls
+-rw-rw-r-- 1 1000 1000 3868 1423203954 ls.cpp
+drwxrwxr-x 2 1000 1000 4096 1423001912 sampledir
+-rw-rw-r-- 1 1000 1000 4593 1422995288 shell.cpp
+-rw-rw-r-- 1 1000 1000 733 1423120594 stat.cpp
+
+]0;powerpuddin@powerpuddin-Lenovo-IdeaPad-Y570: ~/Desktop/cs100/homework/hw0/rshell/srcpowerpuddin@powerpuddin-Lenovo-IdeaPad-Y570:~/Desktop/cs100/homework/hw0/rshell/ssrc$ ./ls sampledir [K
+sample1.c  sample1.cpp  sample1.h  
+]0;powerpuddin@powerpuddin-Lenovo-IdeaPad-Y570: ~/Desktop/cs100/homework/hw0/rshell/srcpowerpuddin@powerpuddin-Lenovo-IdeaPad-Y570:~/Desktop/cs100/homework/hw0/rshell/ssrc$ ./ls a[K-a sampledir
+.  ..  sample1.c  sample1.cpp  sample1.h  
+]0;powerpuddin@powerpuddin-Lenovo-IdeaPad-Y570: ~/Desktop/cs100/homework/hw0/rshell/srcpowerpuddin@powerpuddin-Lenovo-IdeaPad-Y570:~/Desktop/cs100/homework/hw0/rshell/ssrc$ ./ls -ls[K sampledir
+---------- 134519529 134526722 134537520 -1220299512 -1217534852 sample1.c
+---------- 134519529 134526722 134537520 -1220299512 -1217534852 sample1.cpp
+---------- 134519529 134526722 134537520 -1220299512 -1217534852 sample1.h
+
+]0;powerpuddin@powerpuddin-Lenovo-IdeaPad-Y570: ~/Desktop/cs100/homework/hw0/rshell/srcpowerpuddin@powerpuddin-Lenovo-IdeaPad-Y570:~/Desktop/cs100/homework/hw0/rshell/ssrc$ ./ls -al sampledir
+drwxrwxr-x 3 1000 1000 4096 1423203955 .
+drwxrwxr-x 5 1000 1000 4096 1422946456 ..
+drwxrwxr-x 5 1000 1000 4096 1422946456 sample1.c
+drwxrwxr-x 5 1000 1000 4096 1422946456 sample1.cpp
+drwxrwxr-x 5 1000 1000 4096 1422946456 sample1.h
+
+]0;powerpuddin@powerpuddin-Lenovo-IdeaPad-Y570: ~/Desktop/cs100/homework/hw0/rshell/srcpowerpuddin@powerpuddin-Lenovo-IdeaPad-Y570:~/Desktop/cs100/homework/hw0/rshell/ssrc$ ./ls ls.cpp
+ls.cpp  
+]0;powerpuddin@powerpuddin-Lenovo-IdeaPad-Y570: ~/Desktop/cs100/homework/hw0/rshell/srcpowerpuddin@powerpuddin-Lenovo-IdeaPad-Y570:~/Desktop/cs100/homework/hw0/rshell/ssrc$ ./ls -a ls.cpp[Kp
+ls.cpp  
+]0;powerpuddin@powerpuddin-Lenovo-IdeaPad-Y570: ~/Desktop/cs100/homework/hw0/rshell/srcpowerpuddin@powerpuddin-Lenovo-IdeaPad-Y570:~/Desktop/cs100/homework/hw0/rshell/ssrc$ ./ls -l ls.cpp
+-rw-rw-r-- 1 1000 1000 3868 1423203954 ls.cpp
+
+]0;powerpuddin@powerpuddin-Lenovo-IdeaPad-Y570: ~/Desktop/cs100/homework/hw0/rshell/srcpowerpuddin@powerpuddin-Lenovo-IdeaPad-Y570:~/Desktop/cs100/homework/hw0/rshell/ssrc$ /[K./ls .
+'  Makefile  a.out  ls  ls.cpp  sampledir  shell.cpp  stat.cpp  
+]0;powerpuddin@powerpuddin-Lenovo-IdeaPad-Y570: ~/Desktop/cs100/homework/hw0/rshell/srcpowerpuddin@powerpuddin-Lenovo-IdeaPad-Y570:~/Desktop/cs100/homework/hw0/rshell/ssrc$ ./ls ..
+LICENSE  Makefile  README.md  src  tests  
+]0;powerpuddin@powerpuddin-Lenovo-IdeaPad-Y570: ~/Desktop/cs100/homework/hw0/rshell/srcpowerpuddin@powerpuddin-Lenovo-IdeaPad-Y570:~/Desktop/cs100/homework/hw0/rshell/ssrc$ ./ls ../tests
+exec.script  ls.script  
+]0;powerpuddin@powerpuddin-Lenovo-IdeaPad-Y570: ~/Desktop/cs100/homework/hw0/rshell/srcpowerpuddin@powerpuddin-Lenovo-IdeaPad-Y570:~/Desktop/cs100/homework/hw0/rshell/ssrc$ ./ls sampledir -a
+sample1.c  sample1.cpp  sample1.h  
+]0;powerpuddin@powerpuddin-Lenovo-IdeaPad-Y570: ~/Desktop/cs100/homework/hw0/rshell/srcpowerpuddin@powerpuddin-Lenovo-IdeaPad-Y570:~/Desktop/cs100/homework/hw0/rshell/ssrc$ ./ls sampledir -al
+sample1.c  sample1.cpp  sample1.h  
+]0;powerpuddin@powerpuddin-Lenovo-IdeaPad-Y570: ~/Desktop/cs100/homework/hw0/rshell/srcpowerpuddin@powerpuddin-Lenovo-IdeaPad-Y570:~/Desktop/cs100/homework/hw0/rshell/ssrc$ ./ls ls
+ls  
+]0;powerpuddin@powerpuddin-Lenovo-IdeaPad-Y570: ~/Desktop/cs100/homework/hw0/rshell/srcpowerpuddin@powerpuddin-Lenovo-IdeaPad-Y570:~/Desktop/cs100/homework/hw0/rshell/ssrc$ ./ls -l ../src
+-rw-rw-r-- 1 1000 1000 874 1422058742 '
+-rw-rw-r-- 1 1000 1000 26 1423101109 Makefile
+-rwxrwxr-x 1 1000 1000 7932 1423119643 a.out
+-rwxrwxr-x 1 1000 1000 108937 1423122583 ls
+-rw-rw-r-- 1 1000 1000 3868 1423203954 ls.cpp
+drwxrwxr-x 2 1000 1000 4096 1423001912 sampledir
+-rw-rw-r-- 1 1000 1000 4593 1422995288 shell.cpp
+-rw-rw-r-- 1 1000 1000 733 1423120594 stat.cpp
+
+]0;powerpuddin@powerpuddin-Lenovo-IdeaPad-Y570: ~/Desktop/cs100/homework/hw0/rshell/srcpowerpuddin@powerpuddin-Lenovo-IdeaPad-Y570:~/Desktop/cs100/homework/hw0/rshell/ssrc$ ./ls -la ../src[K[K[K[K
+drwxrwxr-x 3 1000 1000 4096 1423203955 .
+drwxrwxr-x 5 1000 1000 4096 1422946456 ..
+drwxrwxr-x 5 1000 1000 4096 1422946456 .git
+drwxrwxr-x 5 1000 1000 4096 1422946456 LICENSE
+-rw-rw-r-- 1 1000 1000 26 1423101109 Makefile
+-rw-rw-r-- 1 1000 1000 26 1423101109 README.md
+-rw-rw-r-- 1 1000 1000 26 1423101109 src
+-rw-rw-r-- 1 1000 1000 26 1423101109 tests
+
+]0;powerpuddin@powerpuddin-Lenovo-IdeaPad-Y570: ~/Desktop/cs100/homework/hw0/rshell/srcpowerpuddin@powerpuddin-Lenovo-IdeaPad-Y570:~/Desktop/cs100/homework/hw0/rshell/ssrc$ ./ls -R
+'  Makefile  a.out  ls  ls.cpp  sampledir  shell.cpp  stat.cpp  
+]0;powerpuddin@powerpuddin-Lenovo-IdeaPad-Y570: ~/Desktop/cs100/homework/hw0/rshell/srcpowerpuddin@powerpuddin-Lenovo-IdeaPad-Y570:~/Desktop/cs100/homework/hw0/rshell/ssrc$ ./ls foobar
+foobar  
+]0;powerpuddin@powerpuddin-Lenovo-IdeaPad-Y570: ~/Desktop/cs100/homework/hw0/rshell/srcpowerpuddin@powerpuddin-Lenovo-IdeaPad-Y570:~/Desktop/cs100/homework/hw0/rshell/ssrc$ ./ls -al[K[Kl foobar
+---------- 134519529 134526722 134537520 -1219484408 -1216719748 foobar
+
+]0;powerpuddin@powerpuddin-Lenovo-IdeaPad-Y570: ~/Desktop/cs100/homework/hw0/rshell/srcpowerpuddin@powerpuddin-Lenovo-IdeaPad-Y570:~/Desktop/cs100/homework/hw0/rshell/ssrc$ ./ls samp[K[K[K[K0[K-l ..[K[K./[K[K../src ../tests
+
+../src:
+-rw-rw-r-- 1 1000 1000 874 1422058742 '
+-rw-rw-r-- 1 1000 1000 26 1423101109 Makefile
+-rwxrwxr-x 1 1000 1000 7932 1423119643 a.out
+-rwxrwxr-x 1 1000 1000 108937 1423122583 ls
+-rw-rw-r-- 1 1000 1000 3868 1423203954 ls.cpp
+drwxrwxr-x 2 1000 1000 4096 1423001912 sampledir
+-rw-rw-r-- 1 1000 1000 4593 1422995288 shell.cpp
+-rw-rw-r-- 1 1000 1000 733 1423120594 stat.cpp
+
+../tests:
+-rw-rw-r-- 1 1000 1000 874 1422058742 '
+-rw-rw-r-- 1 1000 1000 26 1423101109 Makefile
+-rwxrwxr-x 1 1000 1000 7932 1423119643 a.out
+-rwxrwxr-x 1 1000 1000 7932 1423119643 exec.script
+-rwxrwxr-x 1 1000 1000 108937 1423122583 ls
+-rw-rw-r-- 1 1000 1000 3868 1423203954 ls.cpp
+-rw-rw-r-- 1 1000 1000 3868 1423203954 ls.script
+drwxrwxr-x 2 1000 1000 4096 1423001912 sampledir
+-rw-rw-r-- 1 1000 1000 4593 1422995288 shell.cpp
+-rw-rw-r-- 1 1000 1000 733 1423120594 stat.cpp
+
+]0;powerpuddin@powerpuddin-Lenovo-IdeaPad-Y570: ~/Desktop/cs100/homework/hw0/rshell/srcpowerpuddin@powerpuddin-Lenovo-IdeaPad-Y570:~/Desktop/cs100/homework/hw0/rshell/ssrc$ ls -la ls.cpp sampledir
+-rw-rw-r-- 1 powerpuddin powerpuddin 3868 Feb  5 22:25 ls.cpp
+
+sampledir:
+total 8
+drwxrwxr-x 2 powerpuddin powerpuddin 4096 Feb  3 14:18 [0m[01;34m.[0m
+drwxrwxr-x 3 powerpuddin powerpuddin 4096 Feb  5 22:25 [01;34m..[0m
+-rw-rw-r-- 1 powerpuddin powerpuddin    0 Feb  3 14:18 sample1.c
+-rw-rw-r-- 1 powerpuddin powerpuddin    0 Feb  3 14:18 sample1.cpp
+-rw-rw-r-- 1 powerpuddin powerpuddin    0 Feb  3 14:18 sample1.h
+]0;powerpuddin@powerpuddin-Lenovo-IdeaPad-Y570: ~/Desktop/cs100/homework/hw0/rshell/srcpowerpuddin@powerpuddin-Lenovo-IdeaPad-Y570:~/Desktop/cs100/homework/hw0/rshell/ssrc$ ls -l sampledir
+total 0
+-rw-rw-r-- 1 powerpuddin powerpuddin 0 Feb  3 14:18 sample1.c
+-rw-rw-r-- 1 powerpuddin powerpuddin 0 Feb  3 14:18 sample1.cpp
+-rw-rw-r-- 1 powerpuddin powerpuddin 0 Feb  3 14:18 sample1.h
+]0;powerpuddin@powerpuddin-Lenovo-IdeaPad-Y570: ~/Desktop/cs100/homework/hw0/rshell/srcpowerpuddin@powerpuddin-Lenovo-IdeaPad-Y570:~/Desktop/cs100/homework/hw0/rshell/ssrc$ ./ls la [K[K[K[K -lsa[K[Ka sam[K[K[Kls.cpp sampledir
+-rw-rw-r-- 1 1000 1000 3868 1423203954 ls.cpp
+
+sampledir:
+drwxrwxr-x 3 1000 1000 4096 1423203955 .
+drwxrwxr-x 5 1000 1000 4096 1422946456 ..
+drwxrwxr-x 5 1000 1000 4096 1422946456 sample1.c
+drwxrwxr-x 5 1000 1000 4096 1422946456 sample1.cpp
+drwxrwxr-x 5 1000 1000 4096 1422946456 sample1.h
+
+]0;powerpuddin@powerpuddin-Lenovo-IdeaPad-Y570: ~/Desktop/cs100/homework/hw0/rshell/srcpowerpuddin@powerpuddin-Lenovo-IdeaPad-Y570:~/Desktop/cs100/homework/hw0/rshell/ssrc$ ./ls ../src ../tests
+
+../src:
+'  Makefile  a.out  ls  ls.cpp  sampledir  shell.cpp  stat.cpp  
+../tests:
+'  Makefile  a.out  exec.script  ls  ls.cpp  ls.script  sampledir  shell.cpp  stat.cpp  
+]0;powerpuddin@powerpuddin-Lenovo-IdeaPad-Y570: ~/Desktop/cs100/homework/hw0/rshell/srcpowerpuddin@powerpuddin-Lenovo-IdeaPad-Y570:~/Desktop/cs100/homework/hw0/rshell/ssrc$ ./ls ../src ../tests[C[C[1@ [1@-[1@l[1@a[C[1@ [1P
+
+../src:
+-rw-rw-r-- 1 1000 1000 874 1422058742 '
+drwxrwxr-x 3 1000 1000 4096 1423203955 .
+drwxrwxr-x 5 1000 1000 4096 1422946456 ..
+-rw-r--r-- 1 1000 1000 12288 1423037418 .ls.cpp.swp
+-rw-r--r-- 1 1000 1000 16384 1423011402 .shell.cpp.swp
+-rw-rw-r-- 1 1000 1000 26 1423101109 Makefile
+-rwxrwxr-x 1 1000 1000 7932 1423119643 a.out
+-rwxrwxr-x 1 1000 1000 108937 1423122583 ls
+-rw-rw-r-- 1 1000 1000 3868 1423203954 ls.cpp
+drwxrwxr-x 2 1000 1000 4096 1423001912 sampledir
+-rw-rw-r-- 1 1000 1000 4593 1422995288 shell.cpp
+-rw-rw-r-- 1 1000 1000 733 1423120594 stat.cpp
+
+../tests:
+-rw-rw-r-- 1 1000 1000 874 1422058742 '
+drwxrwxr-x 3 1000 1000 4096 1423203955 .
+drwxrwxr-x 3 1000 1000 4096 1423203955 .
+drwxrwxr-x 5 1000 1000 4096 1422946456 ..
+drwxrwxr-x 5 1000 1000 4096 1422946456 ..
+-rw-r--r-- 1 1000 1000 12288 1423037418 .ls.cpp.swp
+-rw-r--r-- 1 1000 1000 16384 1423011402 .shell.cpp.swp
+-rw-rw-r-- 1 1000 1000 26 1423101109 Makefile
+-rwxrwxr-x 1 1000 1000 7932 1423119643 a.out
+-rwxrwxr-x 1 1000 1000 7932 1423119643 exec.script
+-rwxrwxr-x 1 1000 1000 108937 1423122583 ls
+-rw-rw-r-- 1 1000 1000 3868 1423203954 ls.cpp
+-rw-rw-r-- 1 1000 1000 3868 1423203954 ls.script
+drwxrwxr-x 2 1000 1000 4096 1423001912 sampledir
+-rw-rw-r-- 1 1000 1000 4593 1422995288 shell.cpp
+-rw-rw-r-- 1 1000 1000 733 1423120594 stat.cpp
+
+]0;powerpuddin@powerpuddin-Lenovo-IdeaPad-Y570: ~/Desktop/cs100/homework/hw0/rshell/srcpowerpuddin@powerpuddin-Lenovo-IdeaPad-Y570:~/Desktop/cs100/homework/hw0/rshell/ssrc$ exit
+exit
+
+Script done on Fri 06 Feb 2015 03:47:35 PM PST
