@@ -52,7 +52,7 @@ int main(int argc, char **argv)
 	}
 	bool aflag = false;
 	bool lflag = false;
-	bool rflag = false;
+//	bool rflag = false;
 	bool is_flag = false;
 	bool is_dir = false;
 	int dir_count = 0;
@@ -68,7 +68,7 @@ int main(int argc, char **argv)
 			if(is_flag == true && is_dir == false){
 				if(argv[i][j] == 'a') aflag = true;
 				if(argv[i][j] == 'l') lflag = true;
-				if(argv[i][j] == 'R') rflag = true;
+				if(argv[i][j] == 'R');// rflag = true;
 			}
 		}
 	}
@@ -119,7 +119,7 @@ int main(int argc, char **argv)
 			}
 
 			dirent *direntp;
-			while(direntp = readdir(dirp1)){
+			while((direntp = readdir(dirp1))){
 				if(direntp == NULL)perror("readdir");
 				else{
 					if(aflag != true){
