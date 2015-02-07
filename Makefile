@@ -1,6 +1,6 @@
 CFLAGS = -Wall -Werror -ansi -pedantic
 
-all: bin rshell
+all: bin rshell ls
 
 bin:
 	[ ! -d $bin ] && mkdir bin
